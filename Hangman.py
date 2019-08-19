@@ -8,14 +8,13 @@ class Hangman():
 
 
     def getSecret(self):
-        # used in playHangman() to return the word we set it at to guess
+        # used in playHangman() to return the word
         self.getSecret = str(self.word)
         return self.getSecret
         
     def getHint(self):
         # create empty string here, every time it checks self.right
-        # or self.wrong it creates a new instance of updated so
-        # it looks like the is string mutable
+        # or self.wrong it creates a new instance of updated
         updated = ''
         for i in self.word:
             # add letter to updated in index location if guessed correctly
